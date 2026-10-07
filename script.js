@@ -93,5 +93,16 @@ searchInput.addEventListener("input", () => {
   render(filtered);
 });
 
+
+const clearAllBtn = document.querySelector("#clear-all");
+if (clearAllBtn) {
+  clearAllBtn.addEventListener("click", () => {
+    if (confirm("Delete all notes?")) {
+      notes = [];
+      saveNotes();
+      render();
+    }
+  });
+}
 // Initial load
 render();
