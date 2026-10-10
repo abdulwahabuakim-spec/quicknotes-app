@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Directory - Day 5</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: 2rem auto; padding: 1rem; }
+    #users-list { list-style: none; padding: 0; }
+    #users-list li { border: 1px solid #ddd; padding: 1rem; margin-bottom: 0.5rem; border-radius: 6px; }
+    label { font-weight: bold; }
+    #filter-input { padding: 0.5rem; margin-left: 0.5rem; width: 250px; }
+    #load-users { padding: 0.6rem 1.2rem; cursor: pointer; }
+    #status { margin: 1rem 0; font-weight: bold; }
+  </style>
+  <script src="users.js" defer></script>
+</head>
+<body>
+  <h1>User Directory</h1>
+
+  <button id="load-users">Load Users</button>
+
+  <div style="margin-top: 1rem;">
+    <label for="filter-input">Filter by name:</label>
+    <input id="filter-input" type="text" placeholder="Type a name...">
+  </div>
+
+  <p id="status"></p>
+
+  <ul id="users-list"></ul>
+</body>
+</html>
