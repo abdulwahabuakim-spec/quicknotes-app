@@ -1,3 +1,4 @@
+// Day 5 assignment fix
 const API_URL = "https://jsonplaceholder.typicode.com/users"
 const loadBtn = document.querySelector("#load-users")
 const statusText = document.querySelector("#status")
