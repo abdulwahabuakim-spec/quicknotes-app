@@ -19,4 +19,5 @@ Base URL: /api
 - 400 Bad Request - Invalid body
 - 404 Not Found - Book id does not exist
 - 429 Too Many Requests - Rate limiting
+<!-- Day 5 final -->
 
